@@ -27,7 +27,7 @@ nav {
   padding-left: .5em;
 }
 
-nav a {
+nav .links a {
   text-decoration: none;
   color: black;
   padding: 0px 15px;
@@ -53,6 +53,15 @@ nav a:hover {
 .nav-logo-text {
   text-align: center;
   padding-top: 12px;
+}
+
+.nav-logo-text a {
+  text-decoration: none;
+  color: black;
+}
+
+.nav-logo-text a:hover {
+  color: white;
   
 }
 
@@ -68,8 +77,6 @@ nav a:hover {
 .port {
   padding-right: 30px;
 }
-
-/* Main viewing area */
 
 .main-view {
   width: 100vw;
@@ -128,6 +135,7 @@ input[type=submit] {
   opacity: 0.3;
   transition: .3s;
 }
+
 
 /* Media queries */
 
