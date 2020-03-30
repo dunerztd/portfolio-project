@@ -31,21 +31,43 @@
 
   <!-- main viewing area -->
     <section class="main-view">
-      
-        <form>
-          <label for="name">Name:</label>
-          <input type="text" id="name" name="name" placeholder="Your name">
+        <!-- Form grid-box -->
+        <section>
+          <form action="https://formspree.io/mpzlvwjr" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Your name">
 
-          <label for="email" class="form-email-label">Email:</label>
-          <input type="text" id="email" name="email" placeholder="Your email address">
+            <label for="email" class="form-email-label">Email:</label>
+            <input type="text" id="email" name="email" placeholder="Your email address">
 
-          <label for="message">Message:</label>
-          <textarea id="message" name="subject" placeholder="Write something"></textarea>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" placeholder="Write something"></textarea>
 
-          <input type="submit" value="Submit"">
+            <input type="submit" value="Submit"">
 
-        </form>
-      
+          </form>
+        </section>
+
+      <!-- Social media links -->
+        <section>
+          <div class="s-media-link"  class="row-1">
+            <a href="https://github.com/dunerztd">
+              <img src="github.svg" width="50" height="50"/>
+            </a>
+            <a href="#linkedin" class="row-1">
+              <img src="linkedin.svg" width="50" height="50"/>
+            </a>
+            <a href="#instagram" class="row-2">
+              <img src="instagram.svg" width="50" height="50"/>
+            </a>
+            <a href="#facebook" class="row-2">
+              <img src="facebook.svg" width="50" height="50"/>
+            </a>
+            <a href="#twitter" class="row-3">
+              <img src="twitter.svg" width="50" height="50"/>
+            </a>
+          </div>
+        </section>
     </section>
   </div>
 </body>

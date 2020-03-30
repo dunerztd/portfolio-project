@@ -74,7 +74,8 @@ nav a:hover {
 .main-view {
   width: 100vw;
   display: flex;
- 
+  justify-content: space-around;
+  align-items: center;
 }
 
 /* Form grid-box */
@@ -82,7 +83,6 @@ nav a:hover {
 form {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  
   grid-gap: 20px;
 
 }
@@ -103,36 +103,31 @@ input[type=submit] {
   padding: 10px 0px;
 }
 
+/* Social media grid-box/links */
 
-
-
-/* .form-name-label {
-  grid-area: 1 / 1 / 2 / 2;
+.s-media-link {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-gap: 10px;
+  width: 20%;
 }
 
-.form-name-input {
-  grid-area: 2 / 1 / 3 / 2;
+.row-1 {
+  grid-row: 1 / 2;
 }
 
-.form-email-label {
-  grid-area: 1 / 2 / 2 / 3;
+.row-2 {
+  grid-row: 2 / 3;
 }
 
-.form-email-input {
-  grid-area: 2 / 2 / 3 / 3;
+.row-3 {
+  grid-row: 3 / 4;
 }
 
-.form-message-label {
-  grid-area: 1 / 3 / 2 / 4;
+.s-media-link a:hover {
+  opacity: 0.3;
+  transition: .3s;
 }
-
-.form-message-input {
-  grid-area: 2 / 3 / 3 / 4;
-}
-
-.form-submit-button {
-  grid-area: 1 / 4 / 3 / 5;
-} */
 
 /* Media queries */
 
