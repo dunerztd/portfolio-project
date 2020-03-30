@@ -8,6 +8,7 @@ body {
   background-color: grey;
 }
 
+
 /* Header elements */
 
 nav {
@@ -26,7 +27,7 @@ nav {
   padding-left: .5em;
 }
 
-nav a {
+nav .links a {
   text-decoration: none;
   color: black;
   padding: 0px 15px;
@@ -52,6 +53,15 @@ nav a:hover {
 .nav-logo-text {
   text-align: center;
   padding-top: 12px;
+}
+
+.nav-logo-text a {
+  text-decoration: none;
+  color: black;
+}
+
+.nav-logo-text a:hover {
+  color: white;
   
 }
 
@@ -70,12 +80,6 @@ nav a:hover {
 
 /* Main viewing area */
 
-.container {
-  background-color: grey;
-  height: 100vh;
-  width: 100vw;
-}
-
 .main-view {
 width: 100vw;
 display: flex;
@@ -89,10 +93,8 @@ align-items: center;
   width: 65%;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr auto auto;
+  grid-template-rows: 1fr auto auto auto;
   grid-column-gap: 50px;
-  
-  
 }
 
 .image1 {
@@ -114,6 +116,12 @@ align-items: center;
   border: 2px solid black;
 }
 
+.image1-github {
+  grid-column: 1 / 2;
+  grid-row: 4 / 5;
+  border: 2px solid black;
+}
+
 .image2 {
   grid-column: 2 / 3;
   grid-row: 1 / 2;
@@ -129,6 +137,12 @@ align-items: center;
 .image2-text {
   grid-column: 2 / 3;
   grid-row: 3 / 4;
+  border: 2px solid black;
+}
+
+.image2-github {
+  grid-column: 2 / 3;
+  grid-row: 4 / 5;
   border: 2px solid black;
 }
 
