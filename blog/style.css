@@ -6,16 +6,17 @@
 
 body {
   background-color: grey;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 
 /* Header elements */
 
+
 nav {
   font-family: Arial, Helvetica, sans-serif;
   color: black;
   background-color: grey;
-
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -25,6 +26,8 @@ nav {
   width: 100vw;
   top: 0;
   padding-left: .5em;
+  padding-right: 2em;
+  z-index: 10000;
 }
 
 nav .links a {
@@ -81,10 +84,90 @@ nav a:hover {
 /* Main viewing area */
 
 .main-view {
-width: 100vw;
-display: flex;
-justify-content: center;
-align-items: center;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* recent links to blog entries/photos */
+
+.links-container {
+  /* display: block; */
+  width: 400px;
+}
+
+.links-container h2 {
+  text-align: center;
+}
+
+.recent-entry {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+ul {
+  list-style-type: none;
+}
+
+
+.container .main-view .links-container .recent-posts .recent-entry .recent-entry-date {
+  display: inline;
+
+}
+
+ul li a {
+  /* text-decoration: none; */
+  color: black;
+}
+
+/* blog photo gallery flexbox */
+
+.photo-container {
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.photo-container .box {
+  position: relative;
+  width: auto;
+  height: auto;
+  margin: 10px;
+  box-sizing: border-box;
+  display: inline-block;
+
+}
+
+.photo-container .box .img-box {
+  position: relative;
+  /* overflow: hidden; */
+}
+
+.photo-container .box .details {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: white;
+  transition: 1s;
+  opacity: 0;
+}
+
+.photo-container .box .details .content {
+  position: absolute;
+  /* for centering the text */
+  /* top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+  padding: 15px;   */
+}
+
+.photo-container .box:hover .details {
+  opacity: 1;
 }
 
 
