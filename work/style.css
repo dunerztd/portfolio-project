@@ -25,6 +25,7 @@ nav {
   width: 100vw;
   top: 0;
   padding-left: .5em;
+  z-index: 10000;
 }
 
 nav .links a {
