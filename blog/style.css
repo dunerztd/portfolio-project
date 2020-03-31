@@ -25,11 +25,13 @@ nav {
   height: 60px;
   width: 100vw;
   top: 0;
-  padding-left: .5em;
-  padding-right: 2em;
+  
+  
   z-index: 10000;
 }
-
+nav .links {
+  padding-right: 20px;
+}
 nav .links a {
   text-decoration: none;
   color: black;
@@ -78,7 +80,7 @@ nav a:hover {
 }
 
 .port {
-  padding-right: 30px;
+  padding-right: 0px;
 }
 
 /* Main viewing area */
