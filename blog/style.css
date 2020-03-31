@@ -95,7 +95,7 @@ nav a:hover {
 
 .links-container {
   /* display: block; */
-  width: 400px;
+  width: auto;
 }
 
 .links-container h2 {
