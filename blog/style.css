@@ -128,10 +128,13 @@ ul li a {
 /* blog photo gallery flexbox */
 
 .photo-container {
-  width: 100vw;
-  display: flex;
+  width: auto;
+  /* display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
+  flex-wrap: wrap; */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
 }
 
 .photo-container .box {
@@ -158,6 +161,8 @@ ul li a {
   background-color: white;
   transition: 1s;
   opacity: 0;
+  height: 254px;
+  width: 346px;
 }
 
 .photo-container .box .details .content {
