@@ -5,50 +5,59 @@
 }
 
 body {
-  background-color: grey;
+  background-color: darkgrey;
+  font-family: 'Poppins', sans-serif;
+}
+
+.container {
+  width: 100vw;
 }
 
 
 /* Header elements */
 
 nav {
-  font-family: Arial, Helvetica, sans-serif;
   color: black;
-  background-color: grey;
-
+  background-color: darkgrey;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 5px 0px;
   position: fixed;
   height: 60px;
   width: 100vw;
   top: 0;
-  padding-left: .5em;
+  padding-bottom: 65px;
+  z-index: 10000;
 }
 
 nav .links a {
   text-decoration: none;
   color: black;
-  padding: 0px 15px;
+  padding: 0px 5px;
   
 }
 
 nav a:hover {
-  color: yellow;
+  color: orange;
 }
 
 .nav-logo {
-  background-color: red;
+  background-color: orange;
   height: 50px;
   width: 50px;
   display: inline-block;
   border-radius: 50%;
   align-self: flex-start;
-  
-  font-size: 16pt;
-  
+  margin-left: 8px;
+  margin-top: 8px;
+  transition: 1s;
 }
+
+.nav-logo:hover {
+  height: 45px;
+  width: 45px;
+  transition: 1s;
+} 
 
 .nav-logo-text {
   text-align: center;
@@ -62,36 +71,86 @@ nav a:hover {
 
 .nav-logo-text a:hover {
   color: white;
-  
 }
 
 .links {
   padding-top: 15px;
+  padding-right: 10px;
 }
 
+/* Heading */
 .nav-heading {
   padding-top: 60px;
   font-size: 32pt;
-}
-
-.port {
-  padding-right: 30px;
+  font-family: 'Permanent Marker', sans-serif;
+  background-color: lightgoldenrodyellow;
+  width: 100vw;
+  color: darkgrey;
+  margin-bottom: 20px;
+  padding-left: 10px;
 }
 
 /* Main viewing area */
 
 .main-view {
-width: 100vw;
-display: flex;
-justify-content: center;
-align-items: center;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
+.text {
+  width: 50vw;
+  border-radius: 15px;
+  background-color: gray;
+  padding: 20px;
+  text-align: center;
+  margin: 20px;
+}
+
+.text p {
+  padding: 10px;
+}
+
+.text p a {
+  text-decoration: none;
+  color: white;
+}
+
+.text p a:hover {
+  border-bottom: solid 1px white;
+}
+
+.icons img {
+  width: 50px;
+  height: 50px;
+  margin: 20px;
+}
+
+.img-box {
+  width: auto;
+  height: auto;
+  border-radius: 15px;
+  background-color: gray;
+  padding: 20px
+}
+
+.img-box img {
+  width: 200px;
+  height: 400px;
+  overflow: hidden;
+}
 
 /* Media queries */
 
 @media only screen and (max-width: 600px) {
-  .grid-box {
-    display: block;
+  .main-view {
+    flex-direction: column;
+  }
+
+  .text {
+    width: 80vw;
   }
 }
