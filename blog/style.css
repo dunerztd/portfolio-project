@@ -5,33 +5,27 @@
 }
 
 body {
-  background-color: grey;
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: darkgrey;
+  font-family: 'Poppins', sans-serif;
 }
 
 
 /* Header elements */
 
-
 nav {
-  font-family: Arial, Helvetica, sans-serif;
   color: black;
-  background-color: grey;
+  background-color: darkgrey;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 5px 0px;
   position: fixed;
   height: 60px;
   width: 100vw;
   top: 0;
-  padding-right: 20px;
-  
+  padding-bottom: 65px;
   z-index: 10000;
 }
-nav .links {
-  
-}
+
 nav .links a {
   text-decoration: none;
   color: black;
@@ -40,20 +34,26 @@ nav .links a {
 }
 
 nav a:hover {
-  color: yellow;
+  color: orange;
 }
 
 .nav-logo {
-  background-color: red;
+  background-color: orange;
   height: 50px;
   width: 50px;
   display: inline-block;
   border-radius: 50%;
   align-self: flex-start;
-  
-  font-size: 16pt;
-  
+  margin-left: 8px;
+  margin-top: 8px;
+  transition: 1s;
 }
+
+.nav-logo:hover {
+  height: 45px;
+  width: 45px;
+  transition: 1s;
+} 
 
 .nav-logo-text {
   text-align: center;
@@ -67,20 +67,23 @@ nav a:hover {
 
 .nav-logo-text a:hover {
   color: white;
-  
 }
 
 .links {
   padding-top: 15px;
+  padding-right: 10px;
 }
 
+/* Heading */
 .nav-heading {
   padding-top: 60px;
   font-size: 32pt;
-}
-
-.port {
-  padding-right: 0px;
+  font-family: 'Permanent Marker', sans-serif;
+  background-color: lightgoldenrodyellow;
+  width: 100vw;
+  color: darkgrey;
+  margin-bottom: 20px;
+  padding-left: 10px;
 }
 
 /* Main viewing area */
@@ -98,11 +101,16 @@ nav a:hover {
 .links-container {
   /* display: block; */
   width: auto;
+  border-radius: 15px;
+  background-color: gray;
+  padding: 20px
 }
 
 .links-container h2 {
   text-align: center;
+  padding: 10px;
 }
+
 
 .recent-entry {
   display: flex;
@@ -122,7 +130,20 @@ ul {
 
 ul li a {
   /* text-decoration: none; */
-  color: black;
+  text-decoration: none;
+  color: white;
+}
+
+ul li a:hover {
+  border-bottom: solid 1px white;
+}
+
+.recent-entry-name {
+  max-width: 50vw;
+}
+
+.recent-entry-date {
+  padding-left: 15px;
 }
 
 /* blog photo gallery flexbox */
@@ -182,7 +203,10 @@ ul li a {
 /* Media queries */
 
 @media only screen and (max-width: 600px) {
-  .grid-box {
-    display: block;
+  .photo-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
   }
 }
