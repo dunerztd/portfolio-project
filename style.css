@@ -104,11 +104,3 @@ img {
   text-align: center;
   font-family: 'Permanent Marker', sans-serif;
 }
-
-/* Media queries */
-
-@media only screen and (max-width: 600px) {
-  .grid-box {
-    display: block;
-  }
-}
